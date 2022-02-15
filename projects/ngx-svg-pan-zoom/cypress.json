@@ -1,0 +1,9 @@
+{
+  "integrationFolder": "projects/ngx-svg-pan-zoom/cypress/integration",
+  "supportFile": "projects/ngx-svg-pan-zoom/cypress/support/index.ts",
+  "videosFolder": "projects/ngx-svg-pan-zoom/cypress/videos",
+  "screenshotsFolder": "projects/ngx-svg-pan-zoom/cypress/screenshots",
+  "pluginsFile": "projects/ngx-svg-pan-zoom/cypress/plugins/index.ts",
+  "fixturesFolder": "projects/ngx-svg-pan-zoom/cypress/fixtures",
+  "baseUrl": "http://localhost:4200"
+}

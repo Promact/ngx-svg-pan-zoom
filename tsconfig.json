@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "ngx-svg-pan-zoom": [
+        "dist/ngx-svg-pan-zoom/ngx-svg-pan-zoom",
+        "dist/ngx-svg-pan-zoom"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
