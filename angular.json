@@ -34,40 +34,7 @@
             "tsConfig": "projects/ngx-svg-pan-zoom/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-svg-pan-zoom/karma.conf.js"
           }
-        },
-        "cypress-run": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "ngx-svg-pan-zoom:serve",
-            "configFile": "projects/ngx-svg-pan-zoom/cypress.json"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ngx-svg-pan-zoom:serve:production"
-            }
-          }
-        },
-        "cypress-open": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "watch": true,
-            "headless": false,
-            "configFile": "projects/ngx-svg-pan-zoom/cypress.json"
-          }
-        },
-        "e2e": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "ngx-svg-pan-zoom:serve",
-            "watch": true,
-            "headless": false
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ngx-svg-pan-zoom:serve:production"
-            }
-          }
-        }
+        }                       
       }
     },
     "demo": {
