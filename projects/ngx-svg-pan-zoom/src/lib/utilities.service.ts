@@ -20,7 +20,7 @@ export class UtilitiesService {
     }
     return target;
   }
-  
+
   getSvg(elementOrSelector: string | Element) {
     let element: HTMLObjectElement, svg;
 
@@ -167,7 +167,7 @@ export class UtilitiesService {
     var timeout = null;
 
     // Convert refreshRate to timeout
-    if (refreshRate !== "auto" && refreshRate < 60 && refreshRate > 1) {
+    if (refreshRate !== "auto" && (refreshRate as number) < 60 && (refreshRate as number) > 1) {
       timeout = Math.floor(1000 / (refreshRate as number));
     }
 
