@@ -20,24 +20,7 @@ export class UtilitiesService {
     }
     return target;
   }
-  // isElement(o: HTMLElement | SVGElement | SVGSVGElement | Element ) {
-  //   return (
-  //     o instanceof HTMLElement ||
-  //     o instanceof SVGElement ||
-  //     o instanceof SVGSVGElement || //DOM2
-  //     (o &&
-  //       typeof o === "object" &&
-  //       o !== null &&
-  //       o.nodeType === 1 &&
-  //       typeof o.nodeName === "string")
-  //   );
-  // }
-  // isObject(o: any) {
-  //   return Object.prototype.toString.call(o) === "[object Object]";
-  // }
-  // isNumber(n: string | number) {
-  //   return !isNaN(parseFloat(n)) && isFinite(n);
-  // }
+  
   getSvg(elementOrSelector: string | Element) {
     let element: HTMLObjectElement, svg;
 
@@ -144,7 +127,7 @@ export class UtilitiesService {
   }
   throttle(func: Function, wait: number, options: any) {
     const that = this;
-    let context: null | undefined, args: IArguments | null, result: unknown;
+    let context: any, args: IArguments | null, result: unknown;
     let timeout: NodeJS.Timeout | null = null;
     let previous = 0;
     if (!options) {
@@ -158,7 +141,7 @@ export class UtilitiesService {
         context = args = null;
       }
     };
-    return function()  {
+    return function(this: any) {
       const now = that.now();
       if (!previous && options.leading === false) {
         previous = now;
